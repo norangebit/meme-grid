@@ -59,10 +59,6 @@ wrapper {
 detekt {
     input = files("src/main/kotlin")
 
-    config = files("config/detekt/detekt.yml")
-
-    ignoreFailures = true // If`true` the build doesn't fail when the maxIssues count was reached.
-
     reports {
         xml {
             enabled = true
